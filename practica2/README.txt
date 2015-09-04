@@ -22,12 +22,12 @@
  *
  *
  * Ejecucion:
- * Dentro de la carpeta "practica1" ejecuta como administrador en
+ * Dentro de la carpeta "practica2" ejecuta como administrador en
  * la terminal, el comando "user$ sudo java -jar practica2.jar".
  *
  *
  * Opcional:
- * Dentro de la carpeta "practica1" ejecuta como administrador en
+ * Dentro de la carpeta "practica2" ejecuta como administrador en
  * la terminal, el comando "user$ sudo ant doc" para generar la
  * documentacion del proyecto.
  *
