@@ -1,5 +1,4 @@
 /*
- * README
  *
  * Autor: Ivan Rodriguez Soria
  * Numero de cuenta: 310215833
