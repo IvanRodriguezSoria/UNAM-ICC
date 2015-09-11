@@ -1,5 +1,3 @@
-package mx.unam.ciencias.icc;
-
 /**
  * <p>Clase para listas doblemente ligadas de cadenas.</p>
  *
