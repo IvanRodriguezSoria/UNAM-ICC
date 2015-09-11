@@ -1,5 +1,3 @@
-package mx.unam.ciencias.icc;
-
 /**
  * <p>Clase para matrices de 2×2.</p>
  *
