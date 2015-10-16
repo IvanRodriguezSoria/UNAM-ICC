@@ -28,9 +28,8 @@ public class BaseDeDatosEstudiantes extends BaseDeDatos<Estudiante> {
      */
     @Override public Lista<Estudiante> buscaRegistros(String campo, String texto) {
       Lista<Estudiante> l = new Lista<>();
-      IteradorLista<Estudiante> iterador = registros.iteradorLista();
-      while(iterador.hasNext()){
-        Estudiante e = iterador.next();
+      for(Estudiante estudiante : registros){
+        Estudiante e = estudiante;
         switch(campo){
           case "nombre":
             if(e.getNombre().contains(texto))
@@ -55,4 +54,3 @@ public class BaseDeDatosEstudiantes extends BaseDeDatos<Estudiante> {
       return l;
     }
   }
-  
