@@ -63,9 +63,8 @@ public abstract class BaseDeDatos<T extends Registro> {
      * @throws IOException si ocurre un error de entrada/salida.
      */
     public void guarda(BufferedWriter out) throws IOException {
-      IteradorLista<T> iterador = registros.iteradorLista();
-      while(iterador.hasNext()){
-        Registro r = iterador.next();
+      for(T registro : registros){
+        Registro r = registro;
         r.guarda(out);
       }
     }
