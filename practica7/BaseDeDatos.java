@@ -29,13 +29,7 @@ public abstract class BaseDeDatos<T extends Registro> {
      * @return el número de registros en la base de datos.
      */
     public int getNumRegistros() {
-      int contador = 0;
-      IteradorLista<T> iterador = registros.iteradorLista();
-      while(iterador.hasNext()){
-        contador++;
-        iterador.next();
-      }
-      return contador;
+      return registros.getLongitud();
     }
 
     /**
