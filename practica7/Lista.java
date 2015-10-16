@@ -297,7 +297,7 @@ public class Lista<T> implements Iterable<T>{
      *         igual que el número de elementos en la lista.
      */
     public T get(int i) {
-      if(i < 0 || i >= getLongitud())
+      if(i < 0 || i >= longitud)
         throw new ExcepcionIndiceInvalido();
       int contador = 0;
       T s = null;
