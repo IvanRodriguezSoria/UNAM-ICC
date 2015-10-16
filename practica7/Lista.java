@@ -180,18 +180,16 @@ public class Lista<T> implements Iterable<T>{
     public T eliminaPrimero() {
       if(cabeza == null)
         throw new NoSuchElementException();
-      else{
-        T elementoEliminado = cabeza.elemento;
-        if(cabeza.siguiente == null){
-          cabeza = null;
-          rabo = null;
-        }else{
-          cabeza = cabeza.siguiente;
-          cabeza.anterior = null;
-        }
-        longitud--;
-        return elementoEliminado;
+      T elementoEliminado = cabeza.elemento;
+      if(cabeza.siguiente == null){
+        cabeza = null;
+        rabo = null;
+      }else{
+        cabeza = cabeza.siguiente;
+        cabeza.anterior = null;
       }
+      longitud--;
+      return elementoEliminado;
     }
 
     /**
@@ -202,18 +200,16 @@ public class Lista<T> implements Iterable<T>{
     public T eliminaUltimo() {
       if(cabeza == null)
         throw new NoSuchElementException();
-      else{
-        T elementoEliminado = rabo.elemento;
-        if(cabeza.siguiente == null){
-          cabeza = null;
-          rabo = null;
-        }else{
-          rabo = rabo.anterior;
-          rabo.siguiente = null;
-        }
-        longitud--;
-        return elementoEliminado;
+      T elementoEliminado = rabo.elemento;
+      if(cabeza.siguiente == null){
+        cabeza = null;
+        rabo = null;
+      }else{
+        rabo = rabo.anterior;
+        rabo.siguiente = null;
       }
+      longitud--;
+      return elementoEliminado;
     }
 
     /**
@@ -273,8 +269,7 @@ public class Lista<T> implements Iterable<T>{
     public T getPrimero() {
       if(cabeza == null)
         throw new NoSuchElementException();
-      else
-        return cabeza.elemento;
+      return cabeza.elemento;
     }
 
     /**
@@ -285,8 +280,7 @@ public class Lista<T> implements Iterable<T>{
     public T getUltimo() {
       if(cabeza == null)
         throw new NoSuchElementException();
-      else
-        return rabo.elemento;
+      return rabo.elemento;
     }
 
     /**
@@ -297,7 +291,7 @@ public class Lista<T> implements Iterable<T>{
      *         igual que el número de elementos en la lista.
      */
     public T get(int i) {
-      if(i < 0 || i >= longitud)
+      if(i < 0 || i >= longitud )
         throw new ExcepcionIndiceInvalido();
       int contador = 0;
       T s = null;
